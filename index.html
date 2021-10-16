@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+    STEPS TO USE THIS TEMPLATE:
+    1) Change the title.
+    2) Add the "active" class to the correct nav item if it is necessary.
+    3) Put your HTML in section.page-content.
+
+    DO NOT TOUCH THE NAV OR FOOTER WITHOUT ASKING FIRST!
+    ALSO MAKE SURE THE PATH TO STYLE.CSS IS CORRECT.
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,53 +26,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
         crossorigin="anonymous"></script>
-    
+        <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 
-<body class='homepage min-vh-100 h-100'>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="/index.html">
-                <img src='assets/img/logo.webp' height=32>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
-                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-items">
-                <ul class="ms-auto navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Hack</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Links</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Support</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+<body class='min-vh-100 h-100'>
+    
+
+    <section class='page-content w-100 d-flex mt-5'>
+        <div class="pic">
+            <img src="assets\img\Rocket 1.jpg">
+        </div>
+        <div class="content mt-5">
+            <div id="first">
+                Commence Launch to your
             </div>
+            <div id="second">
+                coding visions.
+            </div>
+            <button type="button" class="btn btn-dark">Join Us</button>
+            <br>
+            <br>
+            <hr>
         </div>
-    </nav>
-
-    <section class='splash-wrapper d-flex'>
-        <div class='text-light text-right splash-text ms-auto pe-5 font-weight-bold mt-3'>Hack Club VIT Chennai</div>
+        
     </section>
 
-    <section class='page-content w-100 d-flex flex-column align-items-center'>
-        <div class='w-75 container-fluid'>
-
-        </div>
-    </section>
-
-    <section class='footer w-100 p-3 d-flex flex-column align-items-center justify-content-center'>
-        <div class='container d-flex align-items-center justify-content-center'>
-        </div>
-        Made with ♡, by Students of Hack Club
+    <section class='footer w-100 p-3 d-flex flex-column align-items-center'>
+        
+        
+        
     </section>
 </body>
 
