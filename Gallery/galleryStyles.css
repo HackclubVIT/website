@@ -42,28 +42,24 @@
 
 .gallery-rect-bg {
   position: absolute;
-  width: 70vw;
+  width: 80vw;
   height: 681px;
-  left: 92px;
+  left: 10vw;
   top: 205px;
   background: linear-gradient(293.6deg, #e20203 43.58%, #f87a3d 111.19%);
   box-shadow: 8px 9px 49px rgba(0, 0, 0, 0.29);
   border-radius: 105px;
   /* border: 1px solid green */
 }
+
 @media (max-width: 1200px) {
   .gallery-rect-bg {
-    position: absolute;
     width: 70vw;
-    height: 681px;
-    left: 92px;
-    top: 205px;
-    background: linear-gradient(293.6deg, #e20203 43.58%, #f87a3d 111.19%);
-    box-shadow: 8px 9px 49px rgba(0, 0, 0, 0.29);
-    border-radius: 105px;
+    left: 15vw;
     /* border: 1px solid green */
   }
 }
+
 /* @media (max-width:1024px) {
   .gallery-rect-bg {}
 } */
