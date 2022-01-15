@@ -1,8 +1,8 @@
 .gallery {
   color: #ffffff;
   font-family: Roboto;
-  padding-bottom: 130px
-    /*whatever the height of your footer is*/
+  padding-bottom: 130px;
+  /*whatever the height of your footer is*/
 }
 
 .gallery-heading__main {
@@ -40,58 +40,53 @@
   -webkit-text-stroke-color: white;
 }
 
-/* small screens */
-@media (max-width: 480px) {
-  .gallery-heading__main {
-    /* color: green; */
-    left: 13.82%;
-
-  }
-
-  .gallery-heading__effect {
-    left: 15.82%;
-  }
-
-}
-
-/* .gallery-rect-bg {
+.gallery-rect-bg {
   position: absolute;
-  width: 1251px;
+  width: 70vw;
   height: 681px;
   left: 92px;
   top: 205px;
   background: linear-gradient(293.6deg, #e20203 43.58%, #f87a3d 111.19%);
   box-shadow: 8px 9px 49px rgba(0, 0, 0, 0.29);
   border-radius: 105px;
+  /* border: 1px solid green */
+}
+@media (max-width: 1200px) {
+  .gallery-rect-bg {
+    position: absolute;
+    width: 70vw;
+    height: 681px;
+    left: 92px;
+    top: 205px;
+    background: linear-gradient(293.6deg, #e20203 43.58%, #f87a3d 111.19%);
+    box-shadow: 8px 9px 49px rgba(0, 0, 0, 0.29);
+    border-radius: 105px;
+    /* border: 1px solid green */
+  }
+}
+/* @media (max-width:1024px) {
+  .gallery-rect-bg {}
 } */
 
-@media (max-width:1024px) {
+@media (max-width: 481px) {
   .gallery-rect-bg {
-    position: absolute;
-    width: 80vw;
-    height: 681px;
-    left: 92px;
-    top: 205px;
-    background: linear-gradient(293.6deg, #e20203 43.58%, #f87a3d 111.19%);
-    box-shadow: 8px 9px 49px rgba(0, 0, 0, 0.29);
-    border-radius: 105px;
+    background: transparent;
+    box-shadow: none;
+    border-radius: none;
   }
 }
 
-@media (max-width: 768px) and (min-width:481px) {
+/* small screens */
+@media (max-width: 480px) {
+  .gallery-heading__main {
+    /* color: green; */
+    left: 13.82%;
+  }
 
-  .gallery-rect-bg {
-    position: absolute;
-    width: 80vw;
-    height: 681px;
-    left: 92px;
-    top: 205px;
-    background: linear-gradient(293.6deg, #e20203 43.58%, #f87a3d 111.19%);
-    box-shadow: 8px 9px 49px rgba(0, 0, 0, 0.29);
-    border-radius: 105px;
+  .gallery-heading__effect {
+    left: 15.82%;
   }
 }
-
 
 .bg-dark {
   background: #272121;
@@ -120,7 +115,6 @@
   grid-gap: 10px;
   width: 100vw;
   /* height: 100vh; */
-
 }
 
 .grid-item {
