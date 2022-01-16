@@ -1,0 +1,122 @@
+:root {
+  --shadow-effect-offset: 0.5rem;
+}
+
+.gallery-rect {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-rect img {
+  object-fit: contain;
+  max-height: 60vh;
+}
+
+#gallery-rect-img1 {
+  margin-top: 2rem;
+  align-self: flex-end;
+}
+
+.gallery-heading__main {
+  text-shadow: var(--shadow-effect-offset) var(--shadow-effect-offset) black,
+    var(--shadow-effect-offset) calc(var(--shadow-effect-offset) + 1px) white,
+    calc(var(--shadow-effect-offset) + 1px) var(--shadow-effect-offset) white,
+    var(--shadow-effect-offset) calc(var(--shadow-effect-offset) - 1px) white,
+    calc(var(--shadow-effect-offset) - 1px) var(--shadow-effect-offset) white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.18em;
+  align-self: flex-start;
+  margin-left: 6rem;
+  z-index: 2;
+  color: white;
+  transform: translateY(2rem);
+}
+
+.gallery-rect {
+  width: 80%;
+  min-height: 80vh;
+  background: linear-gradient(293.6deg, #e20203 43.58%, #f87a3d 111.19%);
+  box-shadow: 8px 9px 49px rgba(0, 0, 0, 0.29);
+  border-radius: 2rem;
+}
+
+.bg-dark {
+  background: #272121;
+}
+
+.gallery-subheading {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 2rem;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  letter-spacing: 0.25em;
+  color: #ffffff;
+}
+
+.gallery__grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.grid-item {
+  position: relative;
+  box-shadow: -1.5rem -1.5rem white;
+  background: white;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  transition-duration: 0.2s;
+}
+p.topic {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 80%;
+  transform-origin: top left;
+  left: -8%;
+  font-size: 1.3rem;
+}
+.grid-item > img {
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+@media not all and (hover: none) {
+  .grid-item:hover {
+    box-shadow: -0.4rem -0.4rem white;
+    transform: translate(-1rem, -0.6rem);
+    transform: scale(1.1);
+    color: transparent;
+  }
+  
+}
+
+@media (max-aspect-ratio: 4/3) {
+  .gallery__grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .gallery-heading__main {
+    margin-left: auto;
+  }
+
+  .gallery-rect {
+    display: none;
+  }
+
+  .gallery__grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
