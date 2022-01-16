@@ -63,19 +63,26 @@
 .gallery__grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 5rem;
 }
 
 .grid-item {
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: -1rem -1rem white;
+  position: relative;
+  box-shadow: -1.5rem -1.5rem white;
   background: white;
   border-top-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
   transition-duration: 0.2s;
 }
 
+p.topic {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 80%;
+  transform-origin: top left;
+  left: -8%;
+  font-size: 1.1rem;
+}
 .grid-item > img {
   border-top-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
@@ -86,6 +93,7 @@
     box-shadow: -0.4rem -0.4rem white;
     transform: translate(-1rem, -0.6rem);
     transform: scale(1.1);
+    color: transparent;
   }
 }
 
