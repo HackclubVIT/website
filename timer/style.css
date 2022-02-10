@@ -1,0 +1,112 @@
+@import url(./fonts/style.css);
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+
+:root {
+    --smaller: 0.75;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    background-image: url(./assets/space-bg.svg);
+}
+.back {
+    position: absolute;
+    background-image: url(./assets/back.svg);
+    min-height: 100px;
+    min-width: 100px;
+    left: 10vw;
+    top: 10vh;
+    /* border: 1px solid red; */
+}
+.back:hover {
+    background-image: url(./assets/back2.svg);
+}
+.back-link {
+    margin-bottom: 100px;
+}
+.fonty {
+    min-height: fit-content;
+    min-width: fit-content;
+    background: white;
+}
+.container-timer {
+    border-radius: 0px 15px 15px 15px;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    margin: 0 0;
+    text-align: center;
+    background: -moz-linear-gradient(
+        293.6deg,
+        #e20203 43.58%,
+        #f87a3d 111.19%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        293.6deg,
+        #e20203 43.58%,
+        #f87a3d 111.19%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        293.6deg,
+        #e20203 43.58%,
+        #f87a3d 111.19%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#countdown {
+    margin: 0 0;
+    margin-left: -1.5em;
+}
+
+#headline {
+    font-family: "Sonny Gothic";
+    border-radius: 15px 15px 0px 0px;
+    font-weight: 900;
+    width: max-content;
+    padding: 1em;
+    text-align: left;
+    color: black;
+    background-color: white;
+    margin-bottom: -0.5em;
+}
+
+li {
+    display: inline-block;
+    font-size: 2.5em;
+    list-style-type: none;
+    padding: 1em;
+}
+li > span {
+    font-weight: 900;
+}
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
