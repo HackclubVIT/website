@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Sonny Gothic";
+    src: local("Sonny Gothic Black"), local("Sonny-Gothic-Black"),
+        url("SonnyGothic-Black.woff2") format("woff2"),
+        url("SonnyGothic-Black.woff") format("woff"),
+        url("SonnyGothic-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
