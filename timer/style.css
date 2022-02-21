@@ -76,6 +76,7 @@ body {
     font-weight: bold;
     padding: 1rem;
     padding-bottom: 0;
+    display: none;
 }
 
 #headline {
