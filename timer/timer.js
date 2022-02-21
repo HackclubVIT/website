@@ -1,6 +1,11 @@
-var countDownDate = new Date("Feb 21, 2022 12:00:00").getTime();
+const countDownDate = new Date("Feb 21, 2022 12:00:00").getTime();
 
-var x = setInterval(function () {
+const setImmediatelyCalledInterval = (cb, interval) => {
+    cb();
+    return setInterval(cb, interval);
+}
+
+var x = setImmediatelyCalledInterval(function () {
     var now = new Date().getTime();
     var distance = countDownDate - now;
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -13,7 +18,7 @@ var x = setInterval(function () {
     if ([days, hours, minutes, seconds].some((val) => val < 0)) {
         [days, hours, minutes, seconds] = [0, 0, 0, 0];
         document.querySelector('#countdown-over-text').style.display = 'block';
-        clearInterval(x);
+        window.clearInterval(x);
     }
 
     document.getElementById("days").innerHTML = days;
