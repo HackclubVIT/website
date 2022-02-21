@@ -13,15 +13,11 @@ var x = setInterval(function () {
     if ([days, hours, minutes, seconds].some((val) => val < 0)) {
         [days, hours, minutes, seconds] = [0, 0, 0, 0];
         document.querySelector('#countdown-over-text').style.display = 'block';
+        clearInterval(x);
     }
 
     document.getElementById("days").innerHTML = days;
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
-
-    /* if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "Let the games begin.";
-    } */
 }, 1000);
