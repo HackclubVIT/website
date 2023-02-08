@@ -1,4 +1,4 @@
-# website
+# website [Discontinued Repository]
 
 The official website of Hack Club, VIT Chennai.
 
